@@ -14,10 +14,10 @@
 //  console.log('Total Price is ' + sum)
 // -------------------------------------------------------------------------------------
 // var info = {
-//     name: 'Amjad',
+//     name: 'ubaid',
 //     email: 'abc@.com',
 //     password: 'abc',
-//     age: 27,
+//     age: 23,
 //     gender: 'male',
 //     city: 'Karachi',
 //     country: 'Pakistan'
@@ -39,12 +39,12 @@
 //     this.mygender = gender;
 // }
 
-// var myinfo = new Info('Amjad',27,'male');
-// var myinfo1 = new Info('Asfan', 29, 'male');
-// var myinfo2 = new Info('Sana', 29, 'female');
+// var myinfo = new Info('ubaid',23,'male');
+// var myinfo1 = new Info('adil', 22, 'male');
+// var myinfo2 = new Info('farhana', 17, 'female');
 
 // -----------------------------------------------------------------------------------------------
-function Areapop (name,gender,address,education,profession){
+function Obj (name,gender,address,education,profession){
     this.myname = fname;
     this.mygender = gender;
     this.myaddress = address;
@@ -52,11 +52,7 @@ function Areapop (name,gender,address,education,profession){
     this.myprofession = profession;
 }
 
-// var info1 = new Areapop('Amjad','Male','Baldia Town','B.com','Private Servent')
-// var info2 = new Areapop('Kashif','Male','Baldia Town','B.com','Private Servent')
-// var info3 = new Areapop('Javed','Male','Baldia Town','Inter','Gov Officer')
-// var info4 = new Areapop('Ubaid','Male','Baldia Town','B.com','Gov Officer')
-// var info5 = new Areapop('Asfan','Male','Baldia Town','B.com','Owner')
+
 
 arr = []
 
@@ -71,7 +67,7 @@ function save (){
     address = document.getElementById("add").value;
     education = document.getElementById("edu").value;
     profession = document.getElementById("Pro").value;
-    var person = new Areapop(fname,gender, address, education, profession)
+    var person = new Obj(fname,gender, address, education, profession)
     arr.push(person);
      console.log(arr)
 }
