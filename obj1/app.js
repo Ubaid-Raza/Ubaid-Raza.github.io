@@ -60,30 +60,30 @@ function question3 (){
 // -----------------------------------------------------------------------------------------------
 
 // question4
-// function Obj (fname,gender,address,education,profession){
-//     this.name = fname;
-//     this.gender = gender;
-//     this.address = address;
-//     this.education = education;
-//     this.profession = profession;
-// }
+function Obj (fname,gender,address,education,profession){
+    this.name = fname;
+    this.gender = gender;
+    this.address = address;
+    this.education = education;
+    this.profession = profession;
+}
 
 
 
-// arr = []
+arr = []
 
-// function save (){
-//     fname = document.getElementById("myname").value;
-//     if (document.getElementById("male").checked) {
-//         gender = document.getElementById("male").value;
-//     }
-//     else{
-//         gender = document.getElementById("female").value;
-//     }
-//     address = document.getElementById("add").value;
-//     education = document.getElementById("edu").value;
-//     profession = document.getElementById("Pro").value;
-//     var person = new Obj(fname,gender, address, education, profession)
-//     arr.push(person);
-//      console.log(arr)
-// }
+function save (){
+    fname = document.getElementById("myname").value;
+    if (document.getElementById("male").checked) {
+        gender = document.getElementById("male").value;
+    }
+    else{
+        gender = document.getElementById("female").value;
+    }
+    address = document.getElementById("add").value;
+    education = document.getElementById("edu").value;
+    profession = document.getElementById("Pro").value;
+    var person = new Obj(fname,gender, address, education, profession)
+    arr.push(person);
+     console.log(arr)
+}
