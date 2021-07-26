@@ -1,55 +1,71 @@
-// var itemsArray = [
-//     {name:'juice',price:50, quantity:3},
-//     {name:'cookie',price:30, quantity:9},
-//     {name:'shirt',price:880, quantity:1},
-//     {name:'pen',price:100, quantity:2}
-// ];
-// var sum  = 0
-
-// for (i = 0; i < itemsArray.length; i++) {
-//  a = (itemsArray[i].name) + ' Total Price is ' + ((itemsArray[i].price) * (itemsArray[i].quantity));
-//  console.log(a);
-//  sum = sum + (itemsArray[i].price)
-//  }
-//  console.log('Total Price is ' + sum)
+function question1 (){
+    var my = [
+         {name:"juice",price:50, quantity:3},
+         {name:"cookie",price:30, quantity:9},
+         {name:"shirt",price:880, quantity:1},
+         {name:"pen",price:100, quantity:2}];
+     var tp = 0;
+     var tq = 0;    
+    for (var i = 0; i < my.length; i++){
+    console.log((my[i].name) + ' Total Price is ' + ((my[i].price) * (my[i].quantity)));
+    tp = (tp +my[i].price);
+    tq = (tq + my[i].quantity);
+    }
+    console.log("Total items Price :", tp);
+    console.log('Total quantity : ',tq);
+    };
+    // question1(); uncomment question1 for console 
 // -------------------------------------------------------------------------------------
-// var info = {
-//     name: 'ubaid',
-//     email: 'abc@.com',
-//     password: 'abc',
-//     age: 23,
-//     gender: 'male',
-//     city: 'Karachi',
-//     country: 'Pakistan'
-// }
+function question2(){
+var info = {
+    firstname: 'ubaid',
+    lastname : 'raza',
+    email: 'ubaid31198@gmail.com',
+    password: '000',
+    age: 23,
+    gender: 'male',
+    city: 'Karachi',
+    country: 'Pakistan'
+}
 
-// var a = prompt('check property 1');
-// var b = prompt ('check property 2');
+var a = prompt('check property 1');
+var b = prompt ('check property 2');
 
-// if (a in info && b in info) {
-//     console.log (a + ' or ' + b + ' found');
-// }
-// else {
-//     console.log(a + ' or ' + b + ' not found');
-// }
+if (a in info && b in info) {
+    console.log (a + ' or ' + b + ' found');
+}
+else {  
+    console.log(a + ' or ' + b + ' not found');
+}}
+//question2();     //uncomment question2 for console
 // -----------------------------------------------------------------------------------
-// function Info(name,age,gender){
-//     this.myname = name;
-//     this.myage = age;
-//     this.mygender = gender;
-// }
 
-// var myinfo = new Info('ubaid',23,'male');
-// var myinfo1 = new Info('adil', 22, 'male');
-// var myinfo2 = new Info('farhana', 17, 'female');
-
+function question3 (){
+    function Obj (name,age,city,country){
+         this.name = name,
+         this.age = age,
+         this.city = city,
+         this.country = country;
+    }
+     
+    var obj1 = new Obj("ubaid",23,"karachi","pakistan");
+    console.log(obj1);
+    
+    var obj2 = new Obj("faizan",23,"karachi","pakistan")
+    console.log(obj2)
+    var obj3 = new Obj("adil",18,"karachi","pakistan")
+    console.log(obj3)
+    }
+// question3();  //uncomment question3 for console
 // -----------------------------------------------------------------------------------------------
-function Obj (name,gender,address,education,profession){
-    this.myname = fname;
-    this.mygender = gender;
-    this.myaddress = address;
-    this.myeducation = education;
-    this.myprofession = profession;
+
+// question4
+function Obj (fname,gender,address,education,profession){
+    this.name = fname;
+    this.gender = gender;
+    this.address = address;
+    this.education = education;
+    this.profession = profession;
 }
 
 
@@ -71,5 +87,3 @@ function save (){
     arr.push(person);
      console.log(arr)
 }
-
-
